@@ -122,12 +122,14 @@ There is a statistically significant difference in average fare.
 
 🧪 Statistical Method
 
-Independent Two-Sample T-Test
+1. Independent Two-Sample T-Test
 
-Unequal variance
+2. Unequal variance
 
-Large sample size → CLT assumption satisfied
+3. Large sample size → CLT assumption satisfied
 
+
+python
 
 from scipy.stats import ttest_ind
 
@@ -142,9 +144,9 @@ print("P-Value:", p_value)
 
 📌 Result
 
-T-statistic ≈ 169
+1. T-statistic ≈ 169
 
-P-value < 0.05
+2. P-value < 0.05
 
 ✅ Conclusion
 
@@ -156,11 +158,11 @@ There is a statistically significant difference in average fare.
 
 The analysis confirms:
 
-💰 Higher average fare per trip for Card users
+1. 💰 Higher average fare per trip for Card users
 
-📏 Longer trip distances for Card users
+2. 📏 Longer trip distances for Card users
 
-📊 Higher transaction volume for digital payments
+3. 📊 Higher transaction volume for digital payments
 
 This revenue gap is statistically validated — not random variation.
 
@@ -193,17 +195,17 @@ Deploy visible secure-payment badges & contactless NFC terminals to reduce frict
 
 📌 What This Project Demonstrates
 
-Handling multi-million row datasets
+1. Handling multi-million row datasets
 
-Structured data cleaning methodology
+2. Structured data cleaning methodology
 
-Robust statistical testing
+3. Robust statistical testing
 
-Translating analytics into business strategy
+4. Translating analytics into business strategy
 
-Revenue optimization thinking
+5. Revenue optimization thinking
 
-Hypothesis-driven analytical workflow
+6. Hypothesis-driven analytical workflow
 
 
 
