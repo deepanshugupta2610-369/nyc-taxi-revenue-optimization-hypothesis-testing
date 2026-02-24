@@ -38,6 +38,19 @@ Taxi drivers operate on thin margins. Even small variations in fare per ride mat
 **Source:** NYC Taxi Trip Records  
 **Initial Size:** ~6.4 Million Rows  
 
+# 🛠 End-to-End Data Processing Pipeline
+
+---
+
+## 1️⃣ Import Libraries
+
+```python
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from scipy.stats import ttest_ind
+
 ### Relevant Columns Used:
 
 - `passenger_count`
@@ -87,3 +100,10 @@ Digital payments dominate transaction volume.
 | Mean Distance | 6.8 miles | 3.2 miles |
 | Market Share  | 67.5%     | 32.5%     |
 
+🔎 Behavioral Insight
+
+Card users take longer trips
+
+Card users generate higher average fares
+
+Single-passenger rides account for ~60% of total trips
