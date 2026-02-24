@@ -51,3 +51,21 @@ Taxi drivers operate on thin margins. Even small variations in fare per ride mat
 
 ```python
 duration = (dropoff_datetime - pickup_datetime).dt.total_seconds() / 60
+
+---
+
+### 🧹 Data Cleaning Pipeline
+
+Large-scale transactional data requires structural filtering.
+
+Steps Performed:
+
+✅ Removed duplicate records (~3.3M rows)
+
+✅ Removed null values
+
+✅ Removed negative fares
+
+✅ Removed zero-distance trips
+
+✅ Outlier handling using IQR method:
