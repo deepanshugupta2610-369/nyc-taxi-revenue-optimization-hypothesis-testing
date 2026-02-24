@@ -79,3 +79,11 @@ Steps Performed:
 -Cash: 32.5%
 
 Digital payments dominate transaction volume.
+
+
+| Metric        | Card      | Cash      |
+| ------------- | --------- | --------- |
+| Mean Fare     | $14.50    | $11.00    |
+| Mean Distance | 6.8 miles | 3.2 miles |
+| Market Share  | 67.5%     | 32.5%     |
+
