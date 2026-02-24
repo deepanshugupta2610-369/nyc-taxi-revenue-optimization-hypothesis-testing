@@ -69,3 +69,13 @@ Steps Performed:
 ✅ Removed zero-distance trips
 
 ✅ Outlier handling using IQR method:
+
+
+#📊 Exploratory Data Analysis (EDA)
+## 💳 Payment Share
+
+-Card: 67.5%
+
+-Cash: 32.5%
+
+Digital payments dominate transaction volume.
