@@ -1,6 +1,7 @@
 # 🚖 NYC Taxi Revenue Optimization  
 ## 📊 Statistical Analysis of Payment Behavior & Fare Pricing
 
+Link to the dataset - https://data.world/vizwiz/nyc-taxi-jan-2020/workspace/file?filename=yellow_tripdata_2020-01.csv
 ---
 
 ## 🧠 Executive Summary
