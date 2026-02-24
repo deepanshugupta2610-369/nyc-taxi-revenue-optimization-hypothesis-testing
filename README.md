@@ -60,14 +60,14 @@ from scipy.stats import ttest_ind
 - `pickup_datetime`
 - `dropoff_datetime`
 
-### 🛠 Feature Engineering
+##🛠 Feature Engineering
 
 ```python
 duration = (dropoff_datetime - pickup_datetime).dt.total_seconds() / 60
 
 ---
 
-### 🧹 Data Cleaning Pipeline
+###🧹 Data Cleaning Pipeline
 
 Large-scale transactional data requires structural filtering.
 
@@ -100,10 +100,25 @@ Digital payments dominate transaction volume.
 | Mean Distance | 6.8 miles | 3.2 miles |
 | Market Share  | 67.5%     | 32.5%     |
 
-🔎 Behavioral Insight
+##🔎 Behavioral Insight
 
-Card users take longer trips
+1. Card users take longer trips
 
-Card users generate higher average fares
+2. Card users generate higher average fares
 
-Single-passenger rides account for ~60% of total trips
+3. Single-passenger rides account for ~60% of total trips
+
+---
+
+📈 Hypothesis Testing
+Null Hypothesis (H₀)
+
+There is no difference in average fare between Card and Cash users.
+
+Alternative Hypothesis (H₁)
+
+There is a statistically significant difference in average fare.
+
+
+
+
