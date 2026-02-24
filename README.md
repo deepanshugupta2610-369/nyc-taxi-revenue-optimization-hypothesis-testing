@@ -67,7 +67,7 @@ duration = (dropoff_datetime - pickup_datetime).dt.total_seconds() / 60
 
 ---
 
-###🧹 Data Cleaning Pipeline
+###🧹Data Cleaning Pipeline
 
 Large-scale transactional data requires structural filtering.
 
@@ -118,6 +118,114 @@ There is no difference in average fare between Card and Cash users.
 Alternative Hypothesis (H₁)
 
 There is a statistically significant difference in average fare.
+
+
+🧪 Statistical Method
+
+Independent Two-Sample T-Test
+
+Unequal variance
+
+Large sample size → CLT assumption satisfied
+
+
+from scipy.stats import ttest_ind
+
+card_fares = df[df['payment_type'] == 'Card']['fare_amount']
+cash_fares = df[df['payment_type'] == 'Cash']['fare_amount']
+
+t_stat, p_value = ttest_ind(card_fares, cash_fares, equal_var=False)
+
+print("T-Statistic:", t_stat)
+print("P-Value:", p_value)
+
+
+📌 Result
+
+T-statistic ≈ 169
+
+P-value < 0.05
+
+✅ Conclusion
+
+Reject H₀.
+There is a statistically significant difference in average fare.
+
+
+💎 The “Card Premium” Effect
+
+The analysis confirms:
+
+💰 Higher average fare per trip for Card users
+
+📏 Longer trip distances for Card users
+
+📊 Higher transaction volume for digital payments
+
+This revenue gap is statistically validated — not random variation.
+
+
+🚀 Strategic Recommendations
+1️⃣ Digital Default Strategy
+
+Set card as default payment option for trips beyond distance thresholds.
+
+2️⃣ Micro-Incentivization
+
+Offer loyalty points or small discounts on high-value card transactions.
+
+3️⃣ Trust & Infrastructure
+
+Deploy visible secure-payment badges & contactless NFC terminals to reduce friction for cash-preferring users.
+
+
+🛠 Tools & Technologies
+
+| Category        | Stack               |
+| --------------- | ------------------- |
+| Programming     | Python              |
+| Data Analysis   | Pandas              |
+| Statistics      | SciPy               |
+| Visualization   | Matplotlib, Seaborn |
+| Environment     | Jupyter Notebook    |
+| Version Control | Git & GitHub        |
+
+
+📌 What This Project Demonstrates
+
+Handling multi-million row datasets
+
+Structured data cleaning methodology
+
+Robust statistical testing
+
+Translating analytics into business strategy
+
+Revenue optimization thinking
+
+Hypothesis-driven analytical workflow
+
+
+
+🔮 Future Scope
+
+📊 Multivariate Regression Modeling
+
+🎯 Propensity Modeling (Payment Behavior)
+
+🧪 A/B Testing Framework
+
+📈 Revenue Uplift Simulation
+
+🤖 Predictive Fare Modeling
+
+
+
+👤 Author
+
+Deepanshu Gupta
+Data Analyst | Revenue Analytics | Statistical Modeling
+
 
 
 
